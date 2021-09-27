@@ -177,7 +177,7 @@ body{
     margin: 0 auto;
 }
 .padding{
-    padding:4rem  0;
+    padding:5rem  0;
 }
 .text-primary{
     color: var(--primary);
@@ -236,6 +236,9 @@ body{
 }
 .wrap{
     flex-wrap: wrap;
+}
+.flex-100{
+    flex: 0 1 100%;
 }
 
 .flex-70{
@@ -392,13 +395,16 @@ p{
 .sub-menu{
     position: absolute;
     left: 0;
-    width: 9rem;
+    width: 11rem;
     background-color: white;
     border-radius: 1rem;
     color: var(--text-dark);
     display: none;
-    transform: translateY(18%);
+    transform: translateY(13%);
    
+}
+.fa-chevron-right{
+    padding-left: 2.4rem;
 }
 .sub-menu-box .sub-menu li {
     padding-bottom: 1rem;
@@ -412,6 +418,7 @@ p{
     border-radius: 1rem;
     padding: 1rem 0px;
     position: absolute;
+    transform: translateY(5%);
 }
 
  .sub-menu-box:hover .sub-menu {
@@ -469,9 +476,9 @@ p{
     margin-bottom: 3rem ;
 }
 .btn-flexor .fa-arrow-right{
-    width: 50px;
+    width: 3rem;
     position: relative;
-    height: 50px;
+    height: 3rem;
     border-radius: 50%;
     background-color: var(--primary);
     color: #fff;
@@ -577,19 +584,8 @@ p{
 .about-us-detail  p{
     font-weight: 600;
 }
-/*  our clients */
-.our-client{
-    padding: 3rem 0;
-}
-.our-client-brand img{    
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);    
-        align-items: center;
-        height: 70%;
-}
-.our-client-brand img:hover {
-    filter: none;
-}
+
+
 .active-circle{
     width: 12px;
     height: 12px;
@@ -599,7 +595,32 @@ p{
 }
 .not-active{
     background-color: var(--text-light) !important;
-}
+} 
+
+
+.clients figure img {
+    color: var(--secondary);
+  }  
+  .clients figure img {
+    filter: grayscale(100%);
+  }
+  .clients {
+    padding: 0.5rem 0;
+  }
+  .clients figure {
+    margin-left: 3rem;
+  }
+  .clients figure img:hover {
+    filter: unset;
+  }
+  .client-box {
+    display: -webkit-inline-box;
+    overflow: auto;
+  }
+
+  
+
+
 /*  services */
 .services-container header p{
     font-weight: 700;
@@ -670,14 +691,15 @@ p{
 .owners-card{
     position: relative;
     z-index: 99;
+ 
 }
 .owner-img{
     width: 70px;
     height: 70px;
    margin: 1rem auto;
    object-fit: cover;
-   
 }
+
 .owner-img img{
     border-radius: 50%;
     border:5px solid #909090;
@@ -911,21 +933,25 @@ p{
     margin-left: 1.5rem;
     color: #fff;
    font-size: 20px;
-
+}
+.footer-useful-link i:hover, .btn-five:hover, .btn-buy-now:hover, .btn-send-message:hover {
+    color: aliceblue;
+    background-color: rgba(220, 106, 80, 0.844) ;
 }
 /* back to top  */
 .back-to-top{
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 3%;
+    bottom: 3%;
 }
 .back-to-top i{
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--primary);
     color: #fff;
     font-size: 2rem;
     border-radius: 4px;
+    z-index: 999999;
 }
 /*  blog page */
 .blog-header{
@@ -971,6 +997,13 @@ p{
         letter-spacing: 0;
         word-spacing: 0;
     }
+    p{
+        font-size: 1rem;
+    }
+    /* .btn{
+        font-size: 1rem;
+        height: 100%;
+    } */
     .container {
         max-width: 750px;
         padding-left: 2rem;
@@ -994,7 +1027,11 @@ p{
     .sm-margin-bottom{
         margin-bottom: 1rem;
     }
- 
+    .sm-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .heading {
         font-size: 4rem;
     }
