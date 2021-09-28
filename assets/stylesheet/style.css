@@ -421,15 +421,12 @@ p{
     transform: translateY(5%);
 }
 
- .sub-menu-box:hover .sub-menu {
-    display: inline-block;
-    color: var(--text-light);
-}
-.sub-menu-two:hover .sub-menu-child{
+ 
+.sub-menu-two:hover .sub-menu-child, .sub-menu-box:hover .sub-menu {
     display: inline-block;
     color: var(--text-light);
 } 
-.nav-menu a:hover{
+.nav-menu a:hover, .blog-card-padding:hover  h5, .blog-card-padding:hover p{
     color: var(--primary);
 }
 .bars{
@@ -534,10 +531,7 @@ p{
 .about-us-icon:hover i ,  .why-us-category:hover i{
     color: #fff;
 }
-.about-us-icon:hover, .why-us-category:hover{
-    background-color: var(--primary);
-    color: #fff;
-}
+
 /*  about us  */
 .about-us{
     background-color: var(--bg-pink);
@@ -670,7 +664,7 @@ p{
     color: black;
     margin-right: 0.6rem;
 }
-.values-card-container:hover .value-detail, .values-card-container:hover .value-detail a, .values-card-container:hover .value-detail a i{
+.values-card-container:hover .value-detail, .values-card-container:hover .value-detail a, .values-card-container:hover .value-detail a i, .about-us-icon:hover, .why-us-category:hover{
     background-color: var(--primary);
     color: #fff;
 }
@@ -732,12 +726,7 @@ p{
     padding: 0.5rem 1rem;
     margin-right: 7px;
 }
-.portfolio-links .active-link{
-    color: var(--primary);
-    background-color: rgba(243, 84, 195, 0.3);
-    border-radius: 3rem;
-}
-.portfolio-links .not-active-link:hover{
+.portfolio-links .not-active-link:hover, .portfolio-links .active-link{
     color: var(--primary);
     background-color: rgba(243, 84, 195, 0.3);
     border-radius: 3rem;
@@ -759,8 +748,10 @@ p{
    
 }
 .porfolio-card-3{
-   text-align: left;
-   
+   text-align: left;   
+}
+.porfolio-card-3 h6, span, i, .porfolio-card-3 span, i{
+    color: var(--text-light);
 }
 .web-card-container-one:hover .porfolio-overlay{
     display:block;
@@ -773,7 +764,7 @@ p{
     font-weight: 600;
     margin: 1rem 0;
 }
-.our-team-link li a{
+.our-team-link li i{
     color: black;
     font-size: 2rem;
 }
@@ -963,7 +954,7 @@ p{
 }
 .blog-card{
     box-shadow: -2px 16px 50px -13px rgba(0, 0, 0, 0.18);
-
+     margin-bottom: 2rem ;
 }
 .blog a{
     font-weight: 600;
