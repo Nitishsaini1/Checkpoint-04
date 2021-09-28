@@ -528,9 +528,6 @@ p{
     padding: 1rem 0;
     font-weight: 500;
 }
-.about-us-icon:hover i ,  .why-us-category:hover i{
-    color: #fff;
-}
 
 /*  about us  */
 .about-us{
@@ -664,7 +661,7 @@ p{
     color: black;
     margin-right: 0.6rem;
 }
-.values-card-container:hover .value-detail, .values-card-container:hover .value-detail a, .values-card-container:hover .value-detail a i, .about-us-icon:hover, .why-us-category:hover{
+.values-card-container:hover .value-detail, .values-card-container:hover .value-detail a, .values-card-container:hover .value-detail a i, .about-us-icon:hover, .about-us-icon:hover i {
     background-color: var(--primary);
     color: #fff;
 }
